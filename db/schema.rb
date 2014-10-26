@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141026030238) do
+ActiveRecord::Schema.define(version: 20141026033629) do
 
   create_table "artists", force: true do |t|
     t.string   "first_name", null: false
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(version: 20141026030238) do
     t.text     "bio"
     t.string   "image"
     t.string   "band"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gears", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

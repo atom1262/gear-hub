@@ -1,0 +1,2 @@
+class Amp < Gear
+end
